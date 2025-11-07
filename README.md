@@ -19,6 +19,10 @@ After taking this course, students should be comfortable with:
 - Room: Soda Hall 310
 - Time: Tuesday/Thursday, 2:00 PM - 3:30 PM
 
+If you would like to take the course,
+ but are unable to register (you're an undergrad, or another major),
+ email me directly.
+
 ## Course Materials
 
 The course materials are under development and will be made available here.
