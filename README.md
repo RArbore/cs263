@@ -1,0 +1,31 @@
+# CS 263: Reasoning about Programs
+
+Spring 2026, UC Berkeley
+
+This is the course website/repository for Berkeley CS 263.
+Officially the course is titled "Design of Programming Languages",
+ but I'm calling this version "Reasoning about Programs" to emphasize
+ the focus on formal reasoning and verification.
+
+After taking this course, students should be comfortable with:
+- Logical and mechanized reasoning
+- Techniques for specifying program behavior, 
+  such as operational and denotational semantics
+- Programming in an advanced functional programming language
+
+## Course Information
+
+- Instructor: [Max Willsey](https://mwillsey.com)
+- Room: Soda Hall 310
+- Time: Tuesday/Thursday, 2:00 PM - 3:30 PM
+
+## Course Materials
+
+The course materials are under development and will be made available here.
+
+We will use the textbook [_Hitchhiker's Guide to Logical Verification_](https://github.com/lean-forward/logical_verification_2025), which is freely available online.
+
+We will use the [Lean](https://lean-lang.org/) programming language and proof assistant for mechanized reasoning. No prior experience with Lean is assumed.
+
+
+
