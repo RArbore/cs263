@@ -32,7 +32,7 @@ We will use the textbook [_Hitchhiker's Guide to Logical Verification_](https://
 We will use the [Lean](https://lean-lang.org/) programming language and proof assistant for mechanized reasoning. No prior experience with Lean is assumed.
 
 Some other useful references:
-  - [Programming in Lean](https://leanprover.github.io/functional_programming_in_lean/title.html) online textbook
+  - [Programming in Lean](https://lean-lang.org/functional_programming_in_lean/) online textbook
 
 
 
