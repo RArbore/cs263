@@ -32,7 +32,12 @@ We will use the textbook [_Hitchhiker's Guide to Logical Verification_](https://
 We will use the [Lean](https://lean-lang.org/) programming language and proof assistant for mechanized reasoning. No prior experience with Lean is assumed.
 
 Some other useful references:
-  - [Programming in Lean](https://lean-lang.org/functional_programming_in_lean/) online textbook
+  - Official Lean resources
+      - [Functional Programming in Lean](https://lean-lang.org/functional_programming_in_lean/)
+      - [Theorem Proving in Lean](https://lean-lang.org/theorem_proving_in_lean4/)
+      - [Lean Language Reference](https://lean-lang.org/doc/reference/latest/)
+          - In particular, this has a very useful section on the [Basic Types](https://lean-lang.org/doc/reference/latest/Basic-Types/Natural-Numbers/#Nat) you are likely to use
+  - [From Zero to QED](https://sdiehl.github.io/zero-to-qed/)
 
 
 
