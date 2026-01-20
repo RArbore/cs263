@@ -1,0 +1,10 @@
+name = "LoVe"
+defaultTargets = ["LoVe"]
+
+[[lean_lib]]
+name = "LoVe"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.26.0"
