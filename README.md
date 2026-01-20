@@ -39,5 +39,27 @@ Some other useful references:
           - In particular, this has a very useful section on the [Basic Types](https://lean-lang.org/doc/reference/latest/Basic-Types/Natural-Numbers/#Nat) you are likely to use
   - [From Zero to QED](https://sdiehl.github.io/zero-to-qed/)
 
+## Setup
+
+We will only support Lean installed via the 
+ [official Lean installation method](https://lean-lang.org/install/),
+ which uses VSCode as the editor.
+Lean does support other some editors,
+ but I *strongly recommend* VSCode,
+ as there are some features in the proof interface 
+ that will only work in VSCode.
+
+Once you have VSCode and the Lean extension installed,
+ you can clone this repository and open it in VSCode.
+You should be able to navigate to and work within any of the Lean files.
+The first time you open a Lean file,
+ it may take a few minutes to download and set up the necessary dependencies.
+
+You can manually make it do all of this with:
+```sh
+cd lean
+lake build LoVe.LoVelib
+```
+
 
 
