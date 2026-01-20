@@ -43,6 +43,7 @@ inductive Nat2 where
 #check Nat
 #check Nat.zero
 #check Nat.succ
+#check Nat.succ Nat.zero
 #check Nat2.succ
 
 /- `#print` outputs the definition of its argument. -/
@@ -68,6 +69,9 @@ inductive AExp : Type where
   | mul : AExp → AExp → AExp
   | div : AExp → AExp → AExp
 
+#check AExp.num 12
+#check AExp.var "foo"
+#check fun x ↦ AExp.add (AExp.num 1) x
 
 /- Inductive types are exhaustive!
 

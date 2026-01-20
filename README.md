@@ -18,6 +18,8 @@ After taking this course, students should be comfortable with:
 - Instructor: [Max Willsey](https://mwillsey.com)
 - Room: Soda Hall 310
 - Time: Tuesday/Thursday, 2:00 PM - 3:30 PM
+- [Google Calendar](https://calendar.google.com/calendar/embed?src=c_d895fcd63a8259e1db5f7e26f2017e46bd35418518b77498fc9e0bc6af430a7d%40group.calendar.google.com&ctz=America%2FLos_Angeles)
+  - includes office hours, which are in Max's 
 
 If you would like to take the course,
  but are unable to register (you're an undergrad, or another major),

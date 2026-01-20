@@ -59,6 +59,7 @@ Strengths:
 * modern user interface;
 * documentation;
 * open source;
+* fast programs;
 * endless source of puns (Lean Forward, Lean Together, Boolean, …).
 
 
@@ -192,6 +193,11 @@ Typing rules:
 
 If the same variable `x` occurs multiple times in the context C, the rightmost
 occurrence shadows the other ones.
+
+**IN CLASS**
+Show (from the book):
+--------------------------------
+C ⊢ (fun x : ℤ ↦ abs x) : ℤ → ℕ
 
 
 ## Type Inhabitation
