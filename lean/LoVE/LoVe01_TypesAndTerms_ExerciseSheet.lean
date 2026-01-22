@@ -54,4 +54,12 @@ characters `–` (to draw horizontal bars) and `⊢` useful. -/
 
 -- write your solution in a comment here or on paper
 
+/-
+
+fill in
+------------------------
+C ⊢ (fun f b a ↦ f a b): (α → β → γ) → β → α → γ
+-/
+
+
 end LoVe

@@ -40,6 +40,12 @@ inductive Nat2 where
   | zero: Nat2
   | succ (m: Nat2): Nat2
 
+-- kinda like
+opaque Nat3 : Type
+def Nat3.zero : Nat3 := sorry
+def Nat3.succ : Nat3 → Nat3 := sorry
+-- but inductive types are more than that
+
 #check Nat
 #check Nat.zero
 #check Nat.succ
@@ -69,6 +75,17 @@ inductive AExp : Type where
   | mul : AExp → AExp → AExp
   | div : AExp → AExp → AExp
 
+namespace aexp2
+-- alternatively...
+inductive AExp where
+  | num (i : ℤ)
+  | var (s : String)
+  | add (e1 e2 : AExp)
+  | sub (e1 e2 : AExp) : AExp
+  | mul (e1 e2 : AExp) : AExp
+  | div (e1 e2 : AExp) : AExp
+end aexp2
+
 #check AExp.num 12
 #check AExp.var "foo"
 #check fun x ↦ AExp.add (AExp.num 1) x
@@ -79,6 +96,23 @@ Any value of some inductive type is constructed in **exactly one way**
 from these constructors. This means we can pattern match!
 
 Compare to classes and subclasses in OOP...
+```py
+class AExp: pass
+class Num(AExp):
+  def __init__(self, num):
+    self.num = num
+class Var(AExp):
+  def __init__(self, var):
+    self.var = var
+class Add(AExp):
+  def __init__(self, left, right):
+    self.left = left
+    self.right = right
+class Sub(AExp):
+  ...
+```
+
+Still no guarantee that an AExp is one of the subclasses! Can't pattern match.
 -/
 
 
@@ -101,13 +135,22 @@ end MyList
 #print MyList.List
 
 -- useful sugar for lists
-
+-- try hovering different parts of the term to see associativity
 #eval List.cons 1 (.cons 2 .nil)
 #eval 1 :: 2 :: .nil
 #eval [1, 2]
 
+/- ## Function Definitions -/
 
-/- ## Function Definitions
+def add_two: ℕ → ℕ := fun n ↦ n + 2
+
+-- can also use named parameters
+def add_two' (n: ℕ): ℕ := n + 2
+
+-- Lean has good type inference
+def add_two'' n := n + 2
+
+/- ## Function Definitions with Pattern Matching
 
 The syntax for defining a function operating on an inductive type is very
 compact: We define a single function and use __pattern matching__ to extract the
@@ -133,6 +176,11 @@ def fib3 : ℕ → ℕ
 /- When there are multiple arguments, separate the patterns by `,`: -/
 
 def add : ℕ → ℕ → ℕ
+  | m, Nat.zero   => m
+  | m, Nat.succ n => Nat.succ (add m n)
+
+-- multiple named arguments
+def add' (m n: ℕ) := match m, n with
   | m, Nat.zero   => m
   | m, Nat.succ n => Nat.succ (add m n)
 
@@ -244,6 +292,10 @@ Notice the similarity with `def` commands. `theorem` is like `def` except that
 the result is a proposition rather than data or a function. -/
 
 namespace SorryTheorems
+
+#check Prop
+#check 1 = 1
+#check 1 = 0
 
 theorem add_comm (m n : ℕ) :
     add m n = add n m :=
